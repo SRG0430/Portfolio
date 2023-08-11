@@ -1,0 +1,239 @@
+*{
+    background-color: rgb(52 51 51);
+}
+.main1{
+    margin: 7vh;
+    display: flex;
+    gap: 5%;
+    animation: fade 1.5s ease-in-out;
+}
+.main1 .home-pic img{
+  padding: 10px;
+    border-left: 10px solid #009578;;
+    border-top: 10px solid  #009578;;
+    height: 55vh;
+    width: 25vw;
+    
+}
+
+  .intro{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    
+    height: max-content;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-bottom: 3px solid  #009578;
+    border-width: 7px;
+    
+    
+    
+  }
+  
+  .tabs__label {
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color:  #009578;
+    flex-shrink: initial;
+  }
+  
+  .tabs__radio {
+    display: none;
+  }
+  
+  .tabs__content {
+    order: 1;
+    width: 100%;
+    height: max-content;
+    color: #009578;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+    background-color: white;
+    margin-top:20px ;
+    padding-left: 20px;
+    padding-bottom:20px ;
+  }
+  
+  .tabs__radio:checked + .tabs__label {
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    
+  }
+  
+  .tabs__radio:checked + .tabs__label + .tabs__content {
+    display: initial;
+  }
+  
+
+  .Edu{
+    width: 100%;
+    height: max-content;
+    margin-top: 20px;
+    background-color: white;
+  }
+
+  .Edu table{
+    padding: 15px;
+    background-color: white;
+    font-weight: bold;
+
+    
+  }
+  tr,td{
+    padding: 15px;
+    background-color: white;
+    
+  }
+  .skills p{
+    
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #009578;
+    background-color: white;
+    font-weight: bold;
+  }
+  .skills-bar{
+    background: rgb(95, 93, 91);
+    width:70%;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .skills-bar div{
+    height:7px ;
+    width: 0%;
+    border-radius: 5px;
+   
+  }
+  .skills-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #009578 ;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .html{
+    background-color:#009578 ;
+    animation: html 1s linear forwards ;
+  }
+  .css{
+    background-color: #009578;
+    animation: css 1s linear forwards ;
+  }
+  .js{
+    background-color:#009578;
+    animation: js 1s linear forwards ;
+  }
+  .react{
+    background-color:#009578 ;
+    animation: react 1s linear forwards ;
+  }
+  @keyframes html{
+    100%{
+        width: 86%;
+    }
+  }
+  @keyframes css{
+    100%{
+        width: 75%;
+    }
+  }
+  @keyframes js{
+    100%{
+        width: 60%;
+    }
+  }
+  @keyframes react{
+    100%{
+        width: 50%;
+    }
+  }
+  .about_me h2{
+    color: white;
+     border-bottom:2px solid  #009578 ;
+
+
+  }
+  .about_me{
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    height: max-content;
+    border-bottom: 5px solid #009578;
+    animation: fade 1.5s ease-in-out;
+ 
+    
+  }
+  .about_me p{
+    background-color: white;
+    padding: 10px;
+  }
+
+  .hobbies{
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+    height: max-content;
+  }
+  .hobbies ul{
+    background-color: white;
+    list-style:square;
+  }
+ .hobbies ul li{
+    background-color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    
+  }
+  @media(max-width:530px){
+    
+      .Edu table{
+        padding: 7px;
+        background-color: white;
+        font-weight:700;
+        font-size: smaller;
+    
+        
+      
+    }
+    tr,td{
+      padding: 7px;
+      
+      
+    }
+  }
+  @media(max-width:428px){
+    .tabs__label {
+      padding: 5px 8px;
+      font-size:x-small ;
+    }
+  }
+  @keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 3;
+        transform: translate(0px);
+    }
+}
